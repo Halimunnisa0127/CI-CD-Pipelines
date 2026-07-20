@@ -1,8 +1,0 @@
-{
-  "name": "ci-cd-pipelines",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "echo Building application...",
-    "test": "echo Running tests..."
-  }
-}

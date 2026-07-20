@@ -1,23 +1,17 @@
 version: 0.2
 
 phases:
+
   install:
     commands:
-      - echo Installing dependencies
-
-  pre_build:
-    commands:
-      - echo Pre Build Phase
+      - cd frontend
+      - npm install
 
   build:
     commands:
-      - echo Build Started
       - npm run build
 
-  post_build:
-    commands:
-      - echo Build Completed
-
 artifacts:
+  base-directory: frontend/dist
   files:
     - '**/*'
